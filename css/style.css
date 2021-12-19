@@ -1,0 +1,459 @@
+/*
+
+  Theme Name: Drexel - E-commerce Template
+
+  Author: Monmita
+
+  Support: monmitawp@gmail.com
+
+  Description: E-commerce PSD Template.
+
+  Version: 1.0
+
+*/
+
+/* CSS Index
+
+-----------------------------------
+
+1. Theme default css
+
+2. header
+
+3. slider
+
+4. fact
+
+5. feature
+
+6. video
+
+7. how work
+
+8. price
+
+9. testimonial
+
+10. faq
+
+11. footer
+
+12. blog
+
+*/
+
+/* 1. Theme default css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  color: #444;
+}
+
+.img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+
+  -moz-transition: all 0.3s ease-out 0s;
+
+  -ms-transition: all 0.3s ease-out 0s;
+
+  -o-transition: all 0.3s ease-out 0s;
+
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: normal;
+
+  color: #393542;
+
+  margin-top: 0px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 40px;
+
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0px;
+
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+
+  font-weight: normal;
+
+  line-height: 27px;
+
+  color: #444;
+
+  margin-bottom: 15px;
+}
+
+hr {
+  border-bottom: 1px solid #eceff8;
+
+  border-top: 0 none;
+
+  margin: 30px 0;
+
+  padding: 0;
+}
+
+label {
+  color: #444;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  font-weight: 400;
+}
+
+*::-moz-selection {
+  background: #d6b161;
+
+  color: #fff;
+
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #444;
+
+  color: #fff;
+
+  text-shadow: none;
+}
+
+::selection {
+  background: #444;
+
+  color: #fff;
+
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: #555555;
+
+  font-size: 14px;
+
+  opacity: 1;
+}
+
+*::placeholder {
+  color: #555555;
+
+  font-size: 14px;
+
+  opacity: 1;
+}
+/* =========================
+ Header 
+======================= */
+.header__area {
+  min-height: 170px;
+}
+
+.mega__full {
+  position: relative;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.main__menu ul li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.main__menu li:hover ul.submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.main__menu ul li a {
+  color: #222222;
+  display: block;
+  font-size: 14px;
+  padding: 15px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main__menu ul li:hover > a {
+  color: #888888;
+}
+
+/* submenu */
+.main__menu ul li ul.submenu {
+  background: #222;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 220px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.main__menu ul li ul.submenu li {
+  border-bottom: 1px solid #999;
+  display: block;
+  margin: 0;
+  position: relative;
+}
+
+.main__menu ul li ul.submenu li ul.submenu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  left: 100%;
+  top: 0;
+}
+
+.main__menu ul li ul.submenu li:hover ul.submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.main__menu ul li ul.submenu li a {
+  color: #ffffff;
+  padding: 15px 20px;
+}
+
+.main__menu ul li ul.submenu li:hover > a {
+  color: #888888;
+}
+
+/* mega menu */
+.main__menu ul li .mega__menu {
+  background-color: #222222;
+  padding: 20px 30px;
+  top: 110%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.main__menu ul li:hover > .mega__menu {
+  visibility: visible;
+  opacity: 1;
+}
+.main__menu ul li .mega__menu ul {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.main__menu ul li .mega__menu ul:last-child {
+  padding-right: 0;
+}
+.main__menu ul li .mega__menu ul li {
+  display: block;
+}
+.main__menu ul li .mega__menu ul li.mega__title {
+  border-bottom: 1px solid #ddd;
+}
+
+.main__menu ul li .mega__menu ul li.mega__title a {
+  font-size: 1.2rem;
+  color: #ddd;
+  font-weight: 600;
+}
+.main__menu ul li .mega__menu ul li a {
+  color: #fff;
+  margin: 0;
+}
+
+.mega__menu.megafull {
+  left: 0;
+  width: 100%;
+}
+
+/* header__right */
+
+.header__right ul li {
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+}
+
+.header__right ul li a {
+  color: #222;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header__right ul.cart__mega {
+  background-color: #222;
+  width: 380px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 50px;
+  padding: 60px 60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.header__right li:hover ul.cart__mega {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__right ul li .cart__mega > li {
+  margin-left: 0;
+  margin-bottom: 30px;
+  display: block;
+  overflow: hidden;
+}
+
+.header__right ul li .cart__mega > li:last-child {
+  margin-bottom: 0px;
+}
+.header__right ul li .cart__mega .cart__content a {
+  color: #ddd;
+}
+.header__right ul li .cart__mega .cart__img {
+  float: left;
+}
+.header__right ul li .cart__mega .cart__content {
+  float: left;
+  padding-left: 20px;
+}
+
+.header__right ul li .cart__mega .cart__content span {
+  color: #ddd;
+  font-size: 12px;
+}
+
+.header__right ul li .cart__mega .cart__content span.new {
+  font-size: 18px;
+}
+
+.header__right ul li .cart__mega .del__cart {
+  float: right;
+  color: #ddd;
+}
+
+.total__price span {
+  color: #fff;
+}
+
+.header__right ul li .total__price {
+  border-top: 2px solid #333333;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.total__price span .price {
+  float: right;
+}
+
+.header__right ul li .checkout__link a {
+  color: #eeeeee;
+  background-color: #111111;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
